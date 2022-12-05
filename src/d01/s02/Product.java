@@ -1,6 +1,13 @@
 package d01.s02;
 
 public class Product {
+
+    private static final String TABLE_NAME = "product";
+
+    static {
+        System.out.println("Initializing the class...");
+    }
+
     private int id;
 
     private String name;
@@ -29,5 +36,13 @@ public class Product {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public static Product createProduct(int id, String name) {
+        return new Product(id, name);
+    }
+
+    public void process() {
+        System.out.println("Processing the current '" + name + "'...");
     }
 }

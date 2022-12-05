@@ -13,5 +13,8 @@ public class ProductMain {
 
         Product anotherProduct = new Product(20, "Laptop");
         System.out.println(anotherProduct.getName());
+
+        Product product = Product.createProduct(20, "Tablet");
+        System.out.println(product.getName());
     }
 }
