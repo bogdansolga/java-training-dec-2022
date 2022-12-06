@@ -1,6 +1,6 @@
-package d01.s02.products;
+package domain;
 
-class Tablet extends Product {
+public class Tablet extends Product {
 
     private String producer;
 

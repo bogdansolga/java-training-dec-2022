@@ -1,4 +1,4 @@
-package d01.s02.fruits;
+package domain;
 
 public class Fruit { // modelling (/ describing) a fruit in the code
     private int id;
@@ -39,5 +39,15 @@ public class Fruit { // modelling (/ describing) a fruit in the code
 
     public void setCanMakeJuiceFromIt(boolean canMakeJuiceFromIt) {
         this.canMakeJuiceFromIt = canMakeJuiceFromIt;
+    }
+
+    @Override
+    public String toString() {
+        return "Fruit{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", color='" + color + '\'' +
+                ", canMakeJuiceFromIt=" + canMakeJuiceFromIt +
+                '}';
     }
 }

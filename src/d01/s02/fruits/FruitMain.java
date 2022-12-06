@@ -1,5 +1,7 @@
 package d01.s02.fruits;
 
+import domain.Fruit;
+
 public class FruitMain {
 
     public static void main(String[] args) {

@@ -1,4 +1,6 @@
-package d01.s02.products;
+package domain;
+
+import java.util.Objects;
 
 public class Product {
 
@@ -11,6 +13,8 @@ public class Product {
     private int id;
 
     private String name;
+
+    private Fruit fruit;
 
     private Discount discount;
 
@@ -40,6 +44,14 @@ public class Product {
         this.name = name;
     }
 
+    public Fruit getFruit() {
+        return fruit;
+    }
+
+    public void setFruit(Fruit fruit) {
+        this.fruit = fruit;
+    }
+
     // a factory method --> creates Product objects, hides the implementation
     public static Product createProduct(int id, String name) {
         return new Product(id, name);
@@ -47,6 +59,30 @@ public class Product {
 
     public void process() {
         System.out.println("Processing the current '" + name + "'...");
+    }
+
+    @Override
+    public String toString() {
+        return "Product{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", fruit='" + fruit + '\'' +
+                '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Product product = (Product) o;
+        return id == product.id && Objects.equals(name, product.name);
+    }
+
+    @Override
+    public int hashCode() {
+        int result = id;
+        result = 31 * result + name.hashCode();
+        return result;
     }
 
     // an inner (or private) class - can be used just in the current class

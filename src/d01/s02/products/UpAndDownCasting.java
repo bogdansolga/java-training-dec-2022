@@ -1,5 +1,8 @@
 package d01.s02.products;
 
+import domain.Product;
+import domain.Tablet;
+
 public class UpAndDownCasting {
 
     public static void main(String[] args) {

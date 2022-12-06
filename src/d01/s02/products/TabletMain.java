@@ -1,5 +1,7 @@
 package d01.s02.products;
 
+import domain.Tablet;
+
 public class TabletMain {
 
     public static void main(String[] args) {
