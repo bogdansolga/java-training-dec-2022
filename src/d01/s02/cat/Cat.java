@@ -1,4 +1,4 @@
-package d01.s02;
+package d01.s02.cat;
 
 // an immutable class --> the property is set via constructor, it only has a getter for it
 // --> we cannot modify an object after we create it, as there is no setter on the class

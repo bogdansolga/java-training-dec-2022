@@ -1,6 +1,6 @@
-package d01.s02;
+package d01.s02.products;
 
-public class Tablet extends Product {
+class Tablet extends Product {
 
     private String producer;
 

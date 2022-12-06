@@ -1,4 +1,4 @@
-package d01.s02;
+package d01.s02.products;
 
 public class Product {
 
@@ -11,6 +11,8 @@ public class Product {
     private int id;
 
     private String name;
+
+    private Discount discount;
 
     public Product(int id, String name) { // the recommended object creation method
         this.id = id;
@@ -38,11 +40,19 @@ public class Product {
         this.name = name;
     }
 
+    // a factory method --> creates Product objects, hides the implementation
     public static Product createProduct(int id, String name) {
         return new Product(id, name);
     }
 
     public void process() {
         System.out.println("Processing the current '" + name + "'...");
+    }
+
+    // an inner (or private) class - can be used just in the current class
+    private static class Discount {
+        int percentage;
+
+        double value;
     }
 }

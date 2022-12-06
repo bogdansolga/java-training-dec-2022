@@ -1,4 +1,4 @@
-package d01.s02;
+package d01.s02.products;
 
 public class UpAndDownCasting {
 

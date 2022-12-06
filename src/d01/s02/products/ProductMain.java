@@ -1,4 +1,4 @@
-package d01.s02;
+package d01.s02.products;
 
 public class ProductMain {
 
@@ -16,5 +16,8 @@ public class ProductMain {
 
         Product product = Product.createProduct(20, "Tablet");
         System.out.println(product.getName());
+
+        Tablet tablet = new Tablet();
+        System.out.println(tablet instanceof Product);
     }
 }
