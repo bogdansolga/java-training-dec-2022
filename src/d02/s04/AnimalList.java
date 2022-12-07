@@ -1,6 +1,6 @@
 package d02.s04;
 
-import d02.s02.animals.AbstractAnimal;
+import domain.animals.AbstractAnimal;
 
 public class AnimalList implements List<AbstractAnimal> {
 

@@ -16,7 +16,7 @@ public class CollectionsMain {
 
         //setsExamples();
 
-        mapsExamples();
+        //mapsExamples();
     }
 
     private static void listsExamples() {

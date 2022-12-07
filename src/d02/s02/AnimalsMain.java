@@ -1,5 +1,8 @@
-package d02.s02.animals;
+package d02.s02;
 
+import domain.animals.AbstractAnimal;
+import domain.animals.Cow;
+import domain.animals.Hamster;
 import domain.Fruit;
 import domain.Product;
 

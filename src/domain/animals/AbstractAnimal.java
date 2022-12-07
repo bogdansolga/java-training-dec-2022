@@ -1,4 +1,4 @@
-package d02.s02.animals;
+package domain.animals;
 
 public abstract class AbstractAnimal {
 
@@ -6,15 +6,15 @@ public abstract class AbstractAnimal {
         return new Cow(); // just an example; a real implementation will return the animal by its type
     }
 
-    abstract boolean canBark();
+    public abstract boolean canBark();
 
-    abstract boolean hasFur();
+    public abstract boolean hasFur();
 
-    abstract String getName();
+    public abstract String getName();
 
-    abstract String getColor();
+    public abstract String getColor();
 
-    abstract int getAge();
+    public abstract int getAge();
 
     public AbstractAnimal() {
         // invoked from the extending classes, using the 'super' call

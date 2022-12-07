@@ -1,4 +1,7 @@
-package d02.s02.animals;
+package d02.s02;
+
+import domain.animals.AbstractAnimal;
+import domain.animals.Cow;
 
 public class DatabaseAnimalRepository implements AnimalRepository {
 

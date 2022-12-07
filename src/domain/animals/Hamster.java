@@ -1,20 +1,19 @@
-package d02.s02.animals;
+package domain.animals;
 
-@SuppressWarnings("unused")
-public class Cow extends AbstractAnimal {
+public class Hamster extends AbstractAnimal {
+
+    private int fluffiness;
 
     private String name;
 
     private String color;
 
-    public Cow(String name, String color) {
-        super(); // invoking the constructor from the parent class
-        this.name = name;
-        this.color = color;
+    public int getFluffiness() {
+        return fluffiness;
     }
 
-    public Cow() {
-        super();
+    public void setFluffiness(int fluffiness) {
+        this.fluffiness = fluffiness;
     }
 
     public String getName() {
@@ -34,17 +33,17 @@ public class Cow extends AbstractAnimal {
     }
 
     @Override
-    boolean canBark() {
+    public boolean canBark() {
         return false;
     }
 
     @Override
-    boolean hasFur() {
+    public boolean hasFur() {
         return true;
     }
 
     @Override
-    int getAge() {
+    public int getAge() {
         return 0;
     }
 }

@@ -1,4 +1,6 @@
-package d02.s02.animals;
+package d02.s02;
+
+import domain.animals.AbstractAnimal;
 
 public class AnimalService {
 
