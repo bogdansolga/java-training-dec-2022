@@ -18,7 +18,7 @@ public abstract class AbstractAnimal {
 
     public AbstractAnimal() {
         // invoked from the extending classes, using the 'super' call
-        System.out.println("Something done / initialized in the parent class");
+        //System.out.println("Something done / initialized in the parent class");
     }
 
     @Deprecated

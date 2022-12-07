@@ -1,6 +1,8 @@
 package domain.animals;
 
-public class Hamster extends AbstractAnimal {
+import java.util.Objects;
+
+public class Hamster extends AbstractAnimal implements Comparable<Hamster> {
 
     private int fluffiness;
 
@@ -45,5 +47,23 @@ public class Hamster extends AbstractAnimal {
     @Override
     public int getAge() {
         return 0;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Hamster hamster = (Hamster) o;
+        return Objects.equals(name, hamster.name) && Objects.equals(color, hamster.color);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, color);
+    }
+
+    @Override
+    public int compareTo(Hamster other) {
+        return name.compareTo(other.getName());
     }
 }
