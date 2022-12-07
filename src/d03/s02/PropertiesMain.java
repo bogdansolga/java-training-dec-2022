@@ -1,7 +1,6 @@
 package d03.s02;
 
 import java.io.IOException;
-import java.util.Enumeration;
 import java.util.Properties;
 
 public class PropertiesMain {
