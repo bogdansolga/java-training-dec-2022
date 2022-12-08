@@ -1,6 +1,5 @@
-• Create a CSV or text file with a few animals, one on each line
-• Read the CSV or text file from the disk, create model objects from it
-• Split each line, parse the values and create the needed objects
+• Create a CSV file with a few animals, one on each line
+• Read the CSV file from the disk, split each line, parse the values and create the needed objects
 • After the animals objects are created - display them, iteratively
 • Save the animals which have a certain property (choose one) in another file
 • Load and display the saved file
