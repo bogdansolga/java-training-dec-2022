@@ -1,0 +1,4 @@
+id,type,name,hasFur,canBark
+1,Hamster,Gerard,true,false
+2,Cow,Amelia,true,false
+3,Hamster,Julie,true,false
