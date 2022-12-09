@@ -1,6 +1,7 @@
 package domain;
 
 import java.util.Objects;
+import java.util.Optional;
 
 public class Product {
 
@@ -52,6 +53,14 @@ public class Product {
         this.fruit = fruit;
     }
 
+    public Optional<Discount> getDiscount() {
+        return Optional.ofNullable(discount);
+    }
+
+    public void setDiscount(Discount discount) {
+        this.discount = discount;
+    }
+
     // a factory method --> creates Product objects, hides the implementation
     public static Product createProduct(int id, String name) {
         return new Product(id, name);
@@ -86,9 +95,25 @@ public class Product {
     }
 
     // an inner (or private) class - can be used just in the current class
-    private static class Discount {
-        int percentage;
+    public static class Discount {
+        Integer percentage;
 
         double value;
+
+        public Optional<Integer> getPercentage() {
+            return Optional.ofNullable(percentage);
+        }
+
+        public void setPercentage(Integer percentage) {
+            this.percentage = percentage;
+        }
+
+        public double getValue() {
+            return value;
+        }
+
+        public void setValue(double value) {
+            this.value = value;
+        }
     }
 }
